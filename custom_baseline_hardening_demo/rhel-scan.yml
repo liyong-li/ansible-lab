@@ -40,8 +40,8 @@
     fetch:
       src: "{{item.path}}"
       dest: "{{item.path}}"
+      flat: yes
     with_items: "{{files_located.files}}"
-    flat: yes
     when: files_located.files | length | int > 0
   
   - name: Send Email with audit files
