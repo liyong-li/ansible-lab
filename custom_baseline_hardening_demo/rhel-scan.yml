@@ -39,7 +39,7 @@
   - name: ansible copy file from remote to local.
     fetch:
       src: "{{item.path}}"
-      dest: "{{item.path}}"
+      dest: "/tmp/"
     with_items: "{{files_located.files}}"
     when: files_located.files | length | int > 0
   
