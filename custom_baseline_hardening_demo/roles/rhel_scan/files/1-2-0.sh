@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-if [[ $(grep -c -e "^nameserver 192.168.1.1$" /etc/resolv.conf) -eq 1 && $(grep -c -e "^nameserver 192.168.1.2$" /etc/resolv.conf) -eq 1 && $(grep -c -e "^nameserver 10.20.10.30$" /etc/resolv.conf) -eq 1 && $(grep -c -e "^nameserver 10.20.10.31$" /etc/resolv.conf) -eq 1 && $(grep -c -e "^search opensource.com$" /etc/resolv.conf) -eq 1 ]]; then
+if [[ $(grep -c -e "^nameserver 172.83.4.63$" /etc/resolv.conf) -eq 1 && $(grep -c -e "^nameserver 8.8.8.8$" /etc/resolv.conf) -eq 1 && $(grep -c -e "^search cloud.test123.com$" /etc/resolv.conf) -eq 1 ]]; then
     exit 0
 else
     exit 1
